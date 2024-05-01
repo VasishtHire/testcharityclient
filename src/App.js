@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Header from "./component/Head/Header"
+import About from "./component/About/About"
+import Home from "./component/Hero/Home"
+import Work from "./component/Work/Work"
+import Timeline from "./component/Timeline/Timeline"
+import Team from "./component/Team/Team"
+import Testimonial from "./component/Testimonial/Testimonial"
+import Fundraisers from "./component/Fundraisers/Fundraisers"
+import Contact from "./component/Contact/Contact"
+import Footer from "./component/Footer"
+import AnimatedPage from "./helpers/AnimatedPage"
+import "./App.css"
+// import Togglepage from "./helpers/Togglepage"
 
-function App() {
+
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <AnimatedPage>
+      <Header />
+      <Home />
+      <About />
+      <Work />
+      <Timeline />
+      <Team />
+      <Testimonial />
+      <Fundraisers />
+      <Contact />
+      <Footer />
+      </AnimatedPage>
+    </>
+  )
 }
 
-export default App;
+export default App
